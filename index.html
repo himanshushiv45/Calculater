@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="card">
+            <div class="inp_box">
+                <input type="text" id="display" readonly>
+            </div>
+            <div class="btns">
+                <span class="operatorBtn" onclick="clearAll()">AC</span>
+                <span class="operatorBtn" onclick="readValue('$')">$</span>
+                <span class="operatorBtn" onclick="readValue('%')">%</span>
+                <span class="operatorBtn" onclick="readValue('/')">/</span>
+                <span onclick="readValue('7')">7</span>
+                <span onclick="readValue('8')">8</span>
+                <span onclick="readValue('9')">9</span>
+                <span class="operatorBtn" onclick="readValue('*')">*</span>
+                <span onclick="readValue('4')">4</span>
+                <span onclick="readValue('5')">5</span>
+                <span onclick="readValue('6')">6</span>
+                <span class="operatorBtn" onclick="readValue('-')">-</span>
+                <span onclick="readValue('1')">1</span>
+                <span onclick="readValue('2')">2</span>
+                <span onclick="readValue('3')">3</span>
+                <span class="operatorBtn" onclick="readValue('+')">+</span>
+                <span onclick="readValue('0')">0</span>
+                <span onclick="readValue('.')">.</span>
+                <span onclick="clearAll()">X</span>
+                <span class="operatorBtn" onclick="calculate()">=</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
